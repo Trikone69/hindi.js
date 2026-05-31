@@ -33,5 +33,32 @@ const myFunc = function() {
 }
 
 //console.log(typeof scoreValue);
-console.log(typeof heros)
-console.log(typeof anotherId) 
+//console.log(typeof heros)
+//console.log(typeof anotherId) 
+
+
+
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
+
+// Stack(Primitives), Heap(Non-Primitives)
+
+let myName ="krishna"
+
+let anotherName = myName
+anotherName = "Trikone"
+
+console.log(myName) // krishna
+console.log(anotherName) // Trikone
+
+let userone = {
+    userEmail: "user@example.com",
+    upi: "user@ybl"
+}
+
+let usertwo = userone 
+
+usertwo.userEmail = "usertwo@example.com"
+
+console.log(userone.userEmail) 
+console.log(usertwo.userEmail) 
